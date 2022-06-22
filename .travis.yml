@@ -1,0 +1,6 @@
+language: generic 
+sudo: required 
+services:
+  - docker
+before-install: 
+  - docker build  -t anurag/docker-react -f Dockerfile.dev . 
